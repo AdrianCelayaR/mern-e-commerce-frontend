@@ -1,4 +1,4 @@
-# 🛍️ Gallarido Store
+# 🛍️ Gallarido Store (En desarrollo)
 
 **Gallarido Store** es una tienda en línea moderna, estilizada y responsiva que permite a los usuarios explorar productos, ver detalles, añadir artículos al carrito y completar su compra. Diseñada para ofrecer una experiencia visual limpia y una navegación intuitiva.
 
