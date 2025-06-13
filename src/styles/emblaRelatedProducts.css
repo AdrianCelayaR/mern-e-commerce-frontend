@@ -1,0 +1,101 @@
+.embla-related-products {
+    /* background-color: aqua; */
+    /* max-width: 50rem; */
+    margin: auto;
+    /* --slide-height: 19rem; */
+    --slide-spacing: 1rem;
+    --slide-size: 25%;
+  }
+  .embla__viewport-related-products {
+    overflow: hidden;
+  }
+  .embla__container-related-products {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+  .embla__slide-related-products {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+  }
+  .embla__slide__number-related-products {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    border-radius: 1.8rem;
+    /* font-size: 4rem;
+    font-weight: 600; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--slide-height);
+    user-select: none;
+  }
+  .embla__controls-related-products {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+  }
+  .embla__buttons-related-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+  }
+  .embla__button-related-products {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .embla__button-related-products:disabled {
+    color: var(--detail-high-contrast);
+  }
+  .embla__button__svg-related-products {
+    width: 35%;
+    height: 35%;
+  }
+
+
+/* Ajuste dinámico para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .embla-related-products {
+        --slide-size: 75%; /* Muestra un slide completo y la mitad del siguiente */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .embla-related-products {
+        --slide-size: 50%; /* Muestra dos slides completos */
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1119px) {
+    .embla-related-products {
+        --slide-size: 35%; /* Muestra dos slides completos */
+    }
+}
+
+@media (min-width: 1200px) {
+    .embla-related-products {
+        --slide-size: 25%; /* Muestra cuatro slides completos */
+    }
+}
